@@ -5,7 +5,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "cd client && npm run build",
+    "postinstall": "cd client && npm install",
+    "build": "cd client && npm run build && npm run build-storybook",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prettify": "prettier --write",
     "client": "cd client && npm start",
@@ -50,6 +51,7 @@
     "*.{js,css,md}": "prettier --write"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "postinstall": "^0.7.0"
   }
 }

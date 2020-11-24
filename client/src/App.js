@@ -1,4 +1,4 @@
-import Page from "./pages/Page";
+import Page from "./components/pages/Page.js";
 import "./App.css";
 import React from "react";
 
